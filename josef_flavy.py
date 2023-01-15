@@ -9,7 +9,7 @@ current = 0
 count = 0
 while len(list)>1:
     for _ in range(k-1):
-        list += list.pop(0)
+        list += list.pop(0) # идея в том, что сперва передвигаем из начала списка в конец k-1 элемент, а затем грохаем нулевой (фактически k-й)
     del list[0]
 
 print(list)
